@@ -1285,6 +1285,9 @@ hr {
   text-align: center;
   width: 210px;
   border: 1px solid #e8e8e8;
+  background-image: url("../img/bg-birthday.png");
+  background-position: 200% 0;
+  background-repeat: no-repeat;
 }
 .birthday__figcaption {
   width: 210px;
@@ -1518,6 +1521,33 @@ hr {
   .page-header__mobile-menu-link {
     font-size: 14px;
     padding-right: 16px;
+  }
+  .page-header__search {
+    position: relative;
+    float: left;
+    width: 27px;
+    height: 28px;
+  }
+  .page-header__search--closed .page-header__search-btn {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    z-index: 100;
+    border: none;
+    padding: 0;
+  }
+  .page-header__search-input {
+    display: none;
+  }
+  .page-header__search--closed .page-header__search-input {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    margin-top: -10px;
+    right: 0;
+  }
+  .page-header__search-input--closed {
+    display: none;
   }
   .page-header__user-menu {
     float: right;
@@ -2287,7 +2317,7 @@ hr {
     margin-right: 0;
   }
   .page-header__nav-btn {
-    width: 90px;
+    width: 87px;
   }
   .page-footer__wrapper:after {
     width: 1170px;
@@ -2298,9 +2328,16 @@ hr {
     left: 0;
   }
   .logo--footer {
-    top: -64px;
+    top: -34px;
     left: 50%;
     margin-left: -64px;
+  }
+  .birthday__pic {
+    background-position: 100% 0;
+    width: 255px;
+  }
+  .birthday__figcaption {
+    width: 255px;
   }
 }
 @media (max-width: 767px) {

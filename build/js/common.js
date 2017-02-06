@@ -47,7 +47,7 @@ function setDropdownToggle(toggleBtn) {
   closeBtn.on("click", function(event) {
     event.preventDefault();
     console.log(event.target);
-    $(this).parent().find(dropdown).toggleClass(dropdownClassname + "--closed");
+    dropdown.toggleClass(dropdownClassname + "--closed");
     $(this).toggleClass(toggleBtn + "--closed");
   });
 }
@@ -56,3 +56,4 @@ setDropdownToggle("nav-button--menu");
 setDropdownToggle("page-header__menu-btn");
 setDropdownToggle("page-header__nav-btn");
 setDropdownToggle("page-footer__nav-link");
+setDropdownToggle("page-header__search-btn");

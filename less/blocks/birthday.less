@@ -5,9 +5,9 @@
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
     margin-bottom: 35px;
-    color: #33478e;  
+    color: #33478e;
     &:after {
       content: "";
       position: absolute;
@@ -15,7 +15,7 @@
       left: 0;
       display: inline-block;
       width: 172px;
-      border-bottom: 1px solid #8b8d91; 
+      border-bottom: 1px solid #8b8d91;
     }
   }
   &__pic {
@@ -23,6 +23,13 @@
     text-align: center;
     width: 210px;
     border: 1px solid #e8e8e8;
+    background-image: url("../img/bg-birthday.png");
+    background-position: 200% 0;
+    background-repeat: no-repeat;
+    @media @screen-lg {
+      background-position: 100% 0;
+      width: 255px;
+    }
   }
   &__figcaption {
     width: 210px;
@@ -33,6 +40,9 @@
     padding-top: 10px;
     padding-bottom: 16px;
     padding: 10px 20px 16px;
+    @media @screen-lg {
+      width: 255px;
+    }
   }
   &__date {
     display: block;
