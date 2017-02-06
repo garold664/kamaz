@@ -61,6 +61,76 @@
       opacity: .7;
     }
   }
+
+
+
+    &__search {
+      position: relative;
+      float: left;
+      width: 27px;
+      height: 28px;
+    }
+    &__search--closed &__search-btn {
+      position: absolute;
+      top: 2px;
+      right: 5px;
+      z-index: 100;
+      border: none;
+      padding: 0;
+    }
+    &__search-input {
+      display: none;
+    }
+    &__search--closed &__search-input {
+      position: absolute;
+      display: inline-block;
+      top: 50%;
+      margin-top: -10px;
+      right: 0;
+    }
+    &__search-input--closed {
+      display: none;
+    }
+
+
+    &__flags {
+      position: relative;
+      display: inline-block;
+    }
+    &__flags-list {
+      position: absolute;
+      top: 28px;
+      z-index: 100;
+    }
+    &__flags--closed &__flags-list {
+      display: none;
+    }
+    &__flags &__flags-btn--opened {
+      background-color: #fff;
+      &:after {
+        background-image: url("../img/arrow-up-icon.png");
+      }
+    }
+    &__flags--closed &__flags-btn {
+      background-color: transparent;
+    }
+    &__flags-link {
+      display: block;
+      padding: 4px 23px 4px 10px;
+      background-color: #fff;
+      &:after {
+        content: "";
+        display: inline-block;
+        background-image: url("../img/flag-usa-icon.png");
+        width: 22px;
+        height: 12px;
+      }
+      &:hover {
+        background-color: #dadbdc;
+      }
+    }
+
+
   &__user-menu {
     .reset();
     .item();
@@ -329,35 +399,6 @@
     &__mobile-menu-link {
       font-size: 14px;
       padding-right: 16px;
-    }
-
-
-    &__search {
-      position: relative;
-      float: left;
-      width: 27px;
-      height: 28px;
-    }
-    &__search--closed &__search-btn {
-      position: absolute;
-      top: 2px;
-      right: 5px;
-      z-index: 100;
-      border: none;
-      padding: 0;
-    }
-    &__search-input {
-      display: none;
-    }
-    &__search--closed &__search-input {
-      position: absolute;
-      display: inline-block;
-      top: 50%;
-      margin-top: -10px;
-      right: 0;
-    }
-    &__search-input--closed {
-      display: none;
     }
 
 

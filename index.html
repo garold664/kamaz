@@ -48,9 +48,19 @@
               </a>
               <input class="page-header__search-input" type="text" style="height: 20px; width: 188px;">
             </div>
-            <a class="nav-button nav-button--flag" href="#">
-              <span class="visuallyhidden">Поиск</span>
-            </a>
+            <div class="page-header__flags page-header__flags--closed">
+              <a class="nav-button nav-button--flag page-header__flags-btn" data-toggle="page-header__flags" href="#">
+                <span class="visuallyhidden">Выбрать флаг</span>
+              </a>
+              <div class="page-header__flags-list">
+                <a class="page-header__flags-link" href="#">
+                  <span class="visuallyhidden">use</span>
+                </a>
+                <a class="page-header__flags-link" href="#">
+                  <span class="visuallyhidden">use</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <ul class="page-header__user-menu">

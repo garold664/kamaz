@@ -48,12 +48,13 @@ function setDropdownToggle(toggleBtn) {
     event.preventDefault();
     console.log(event.target);
     dropdown.toggleClass(dropdownClassname + "--closed");
-    $(this).toggleClass(toggleBtn + "--closed");
+    $(this).toggleClass(toggleBtn + "--opened");
   });
 }
 
 setDropdownToggle("nav-button--menu");
 setDropdownToggle("page-header__menu-btn");
 setDropdownToggle("page-header__nav-btn");
-setDropdownToggle("page-footer__nav-link");
 setDropdownToggle("page-header__search-btn");
+setDropdownToggle("page-footer__nav-link");
+setDropdownToggle("page-header__flags-btn");

@@ -709,6 +709,69 @@ hr {
   text-decoration: none;
   opacity: .7;
 }
+.page-header__search {
+  position: relative;
+  float: left;
+  width: 27px;
+  height: 28px;
+}
+.page-header__search--closed .page-header__search-btn {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  z-index: 100;
+  border: none;
+  padding: 0;
+}
+.page-header__search-input {
+  display: none;
+}
+.page-header__search--closed .page-header__search-input {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  margin-top: -10px;
+  right: 0;
+}
+.page-header__search-input--closed {
+  display: none;
+}
+.page-header__flags {
+  position: relative;
+  display: inline-block;
+}
+.page-header__flags-list {
+  position: absolute;
+  top: 28px;
+  z-index: 100;
+}
+.page-header__flags--closed .page-header__flags-list {
+  display: none;
+}
+.page-header__flags .page-header__flags-btn--opened {
+  background-color: #fff;
+}
+.page-header__flags .page-header__flags-btn--opened:after {
+  background-image: url("../img/arrow-up-icon.png");
+}
+.page-header__flags--closed .page-header__flags-btn {
+  background-color: transparent;
+}
+.page-header__flags-link {
+  display: block;
+  padding: 4px 23px 4px 10px;
+  background-color: #fff;
+}
+.page-header__flags-link:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/flag-usa-icon.png");
+  width: 22px;
+  height: 12px;
+}
+.page-header__flags-link:hover {
+  background-color: #dadbdc;
+}
 .page-header__user-menu {
   margin: 0;
   padding: 0;
@@ -1113,6 +1176,9 @@ hr {
   top: 10px;
   left: 15px;
 }
+.logo:hover {
+  opacity: 0.3;
+}
 .logo--footer {
   top: -43px;
   left: 50%;
@@ -1233,7 +1299,8 @@ hr {
   background-image: url("../img/search-icon.png");
 }
 .nav-button--flag {
-  margin-left: 3px;
+  padding-left: 10px;
+  padding-right: 4px;
 }
 .nav-button--flag:before {
   content: "";
@@ -1521,33 +1588,6 @@ hr {
   .page-header__mobile-menu-link {
     font-size: 14px;
     padding-right: 16px;
-  }
-  .page-header__search {
-    position: relative;
-    float: left;
-    width: 27px;
-    height: 28px;
-  }
-  .page-header__search--closed .page-header__search-btn {
-    position: absolute;
-    top: 2px;
-    right: 5px;
-    z-index: 100;
-    border: none;
-    padding: 0;
-  }
-  .page-header__search-input {
-    display: none;
-  }
-  .page-header__search--closed .page-header__search-input {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    margin-top: -10px;
-    right: 0;
-  }
-  .page-header__search-input--closed {
-    display: none;
   }
   .page-header__user-menu {
     float: right;
