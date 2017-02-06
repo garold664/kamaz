@@ -40,6 +40,21 @@
   background-color: transparent;
   cursor: pointer;
 }
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+.overlay:hover .overlay__block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  opacity: .5;
+  background-image: url(../img/overlay-logo.png);
+  background-size: 100% 100%;
+}
 * {
   box-sizing: border-box;
 }
@@ -1175,9 +1190,6 @@ hr {
   z-index: 100;
   top: 10px;
   left: 15px;
-}
-.logo:hover {
-  opacity: 0.3;
 }
 .logo--footer {
   top: -43px;
