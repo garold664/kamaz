@@ -1,0 +1,54 @@
+.nav-button {
+  .icon;
+  font-size: 0;
+  padding: 0 10px 0 0;
+  border-right: 1px solid #e3e4e6;
+  &:after {
+    content: "";
+    .icon();
+    background-image: url("../img/menu-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    opacity: 0.4;
+  }
+  &:hover:after {
+    opacity: 1;
+  }
+  &--search {
+    &:after {
+      background-image: url("../img/search-icon.png");
+    }
+  }
+  &--flag {
+    margin-left: 3px;
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      background-image: url("../img/flag-russia-icon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 1;
+      width: 24px;
+      height: 16px;
+    }
+    &:hover:before {
+      border: 1px solid #000;
+    }
+    &:after {
+      background-image: url("../img/arrow-down-icon.png");
+      margin-left: 1px;
+    }
+    &:active:after {
+      background-image: url("../img/arrow-up-icon.png");
+    }
+  }
+
+  @media @screen-sm {
+    &--menu {
+      display: none;
+    }
+  }
+}

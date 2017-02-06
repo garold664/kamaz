@@ -1,0 +1,38 @@
+.logo {
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  left: 15px;
+
+
+  &--footer {
+    top: -43px;
+    left: 50%;
+    margin-left: -43px;
+  }
+  
+  @media @screen-sm {
+
+    &--footer {
+      top: -64px;
+      left: 50%;
+      margin-left: -64px;
+    }
+  }
+  @media @screen-md {
+    &--footer {
+      top: -64px + 30;
+    }
+  }
+  @media @screen-lg {
+    top: 5px;
+    left: 0;
+
+    &--footer {
+      top: -64px;
+      left: 50%;
+      margin-left: -64px;
+    }
+  }
+
+}

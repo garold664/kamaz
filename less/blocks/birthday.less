@@ -1,0 +1,47 @@
+.birthday {
+  &__title {
+    .reset;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 5px; 
+    margin-bottom: 35px;
+    color: #33478e;  
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      display: inline-block;
+      width: 172px;
+      border-bottom: 1px solid #8b8d91; 
+    }
+  }
+  &__pic {
+    padding-top: 10px;
+    text-align: center;
+    width: 210px;
+    border: 1px solid #e8e8e8;
+  }
+  &__figcaption {
+    width: 210px;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    font-family: @robslab;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding: 10px 20px 16px;
+  }
+  &__date {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    color: #da251d;
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

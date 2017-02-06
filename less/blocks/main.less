@@ -1,0 +1,116 @@
+.main {
+  padding-top: 25px;
+  padding-bottom: 104px;
+  @media @screen-sm {
+    padding-top: 12px;
+    padding-bottom: 115px;
+  }
+  @media @screen-md {
+    padding-bottom: 128px;
+  }
+  &__title {
+    .reset;
+    font-family: @cuprum;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    @media @screen-sm {
+      padding-bottom: 45px;
+      font-size: 24px;
+    }
+  }
+  &__article {
+    margin-top: 13px;
+  }
+  &__pic {
+    /* text-align: center; */
+  }
+  &__article-title {
+    .reset;
+    font-family: @cuprum;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    @media @screen-sm {
+      padding-bottom: 20px;
+    }
+  }
+  &__article-text {
+    font-family: @ptsans;
+    font-size: 14px;
+    line-height: 18px;
+    @media @screen-sm {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__history-nav {
+    position: relative;
+    overflow: hidden;
+    padding: 25px 5px;
+    @media @screen-sm {
+      padding: 37px 5px 45px;
+    }
+  }
+  &__history-nav-btn {
+    .btn;
+    position: absolute;
+    right: 0;
+    top: 17px;
+    padding: 15px 20px;
+    padding-left: 30px;
+    border-bottom: 3px solid #f8d3d2;
+    background-color: #fff;
+    &:after {
+      content: "";
+      .icon;
+      background-repeat: no-repeat;
+    }
+    
+    &--next:after {
+      background-image: url("../img/arrow-right-icon.png");
+      width: 8px;
+      height: 13px;
+    }
+  }
+  &__history-nav-list {
+    font-size: 0;
+    .item;
+    .reset;
+    width: 870px;
+  }
+
+  &__history-nav-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__history-nav-link {
+    font-family: @cuprum;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    color: #626262;
+    border-bottom: 3px solid #f8d3d2;
+
+    &:hover, &:active {
+      text-decoration: none;
+      border-bottom: 3px solid #da251d;
+      color: #000;
+    }
+    @media @screen-sm {
+      font-size: 14px;
+      padding-left: 9px;
+      padding-right: 9px;
+      padding-bottom: 0;
+    }
+  }
+
+  @media @screen-sm {
+    &__history-nav-btn--next {
+      display: none;
+    }
+  }
+    
+}
