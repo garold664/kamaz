@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>История клуба</title>
+  <title>Администрация клуба</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -193,7 +193,7 @@
      <div class="page-header__container">
        <ul class="page-header__nav">
           <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">
+            <a class="page-header__nav-link page-header__nav-link--active">
               Администрация
             </a>
           </li>
@@ -203,7 +203,7 @@
             </a>
           </li>
           <li class="page-header__nav-item">
-            <a class="page-header__nav-link page-header__nav-link--active">
+            <a class="page-header__nav-link" href="#">
               История
             </a>
           </li>
@@ -236,7 +236,7 @@
         <button class="page-header__nav-btn dropdown-btn" data-toggle="page-header__nav-mobile"><span>Ещё</span></button>
         <ul class="page-header__nav-mobile page-header__nav-mobile--closed">
           <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">
+            <a class="page-header__nav-link page-header__nav-link--active">
               Администрация
             </a>
           </li>
@@ -246,7 +246,7 @@
             </a>
           </li>
           <li class="page-header__nav-item">
-            <a class="page-header__nav-link page-header__nav-link--active">
+            <a class="page-header__nav-link" href="#">
               История
             </a>
           </li>
@@ -281,78 +281,172 @@
   </header>
   <div class="page-container container">
     <div class="row">
-      <main class="main main--history col-md-8">
-        <h1 class="main__title">
-          История ФК &laquo;КАМАЗ&raquo;
-        </h1>
-        <div class="main__pic">
-          <picture>
-            <source srcset="img/photo-history-1170.jpg" media="(min-width: 1200px)">
-            <source srcset="img/photo-history-960.jpg" media="(min-width: 992px)">
-            <source srcset="img/photo-history-768.jpg" media="(min-width: 768px)">
-            <img src="img/photo-history-320.jpg" alt="История клуба">
-          </picture>
-        </div>
-        <div class="main__history-nav">
-          <button class="main__history-nav-btn main__history-nav-btn--next">
-            <span class="visuallyhidden">Вперед</span>
-          </button>
-          <ul class="main__history-nav-list">
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1981</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1993</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1994</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1995</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1997</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1999</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2004</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2005</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2006</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2008</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2009</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2010</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2011</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2012</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2013</a>
-            </li>
-          </ul>
-        </div>
-        <article class="main__article">
-          <h2 class="main__article-title">
-            Первые шаги, первые успехи
-          </h2>
-          <div class="main__article-text">
-            Клуб основан 11 ноября 1981 года на прессово-рамном заводе «КАМАЗа». За основу взята цеховая команда ТСО. До 1988 года команда участвовала в городских и республиканских первенствах. С 1988 по 1991 год клуб выступал во второй лиге первенства СССР. В 1992 году команда попала в первую лигу первенства России. Сезон 1992 прошёл для команды очень удачно. Только за первые 18 туров у «КАМАЗа» было всего 3 поражения и ни одной ничьей (37 мячей забито, 10 пропущено). В таком же духе челнинцы продолжили и во втором круге, в конце концов «КАМАЗ» одержал 12 крупных побед (6:1, 6:2, дважды 5:0, 5:1, четыре раза по 4:0, трижды 3:0), вследствие чего занял первое место по итогом сезона и с первой же попытки получил путёвку в Высшую лигу.
-          </div>
-        </article>
+      <main class="main main--club col-md-8">
+        <select class="main__select" name="year" size="1">
+          <option value="bilding">2016/17</option>
+          <option value="bilding">2015/16</option>
+          <option value="bilding">2014/15</option>
+          <option value="bilding">2013/14</option>
+          <option value="bilding">2012/13</option>
+        </select>
+        <section class="club">
+          <h1 class="main__title club__title">
+            Администрация клуба
+          </h1>
+          <div class="club__list">
+            <div class="row">
+             <div class="col-sm-6">
+                <div class="club__item">
+                 <div class="club__item-pic">
+                   <picture>
+                     <source srcset="img/photo-club-1-1170.jpg" media="(min-width: 1200px)">
+                     <source srcset="img/photo-club-1-960.jpg" media="(min-width: 992px)">
+                     <source srcset="img/photo-club-1-768.jpg" media="(min-width: 768px)">
+                     <img src="img/photo-club-1-320.jpg" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                   </picture>
+                 </div>
+                 <div class="club__item-info">
+                   <div class="club__item-position">
+                     Президент клуба
+                   </div>
+                   <div class="club__item-name">
+                     Магдеев Наиль Гамбарович
+                   </div>
+                 </div>
+               </div>
+               <div class="club__item">
+                 <div class="club__item-pic">
+                   <picture>
+                     <source srcset="img/photo-club-2-1170.jpg" media="(min-width: 1200px)">
+                     <source srcset="img/photo-club-2-960.jpg" media="(min-width: 992px)">
+                     <source srcset="img/photo-club-2-768.jpg" media="(min-width: 768px)">
+                     <img src="img/photo-club-2-320.jpg" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                   </picture>
+                 </div>
+                 <div class="club__item-info">
+                   <div class="club__item-position">
+                     Спортивный директор
+                   </div>
+                   <div class="club__item-name">
+                     Хламин Сергей Владиморович
+                   </div>
+                 </div>
+               </div>
+               <div class="club__item">
+                 <div class="club__item-pic">
+                   <picture>
+                     <source srcset="img/photo-club-3-1170.jpg" media="(min-width: 1200px)">
+                     <source srcset="img/photo-club-3-960.jpg" media="(min-width: 992px)">
+                     <source srcset="img/photo-club-3-768.jpg" media="(min-width: 768px)">
+                     <img src="img/photo-club-3-320.jpg" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                   </picture>
+                 </div>
+                 <div class="club__item-info">
+                   <div class="club__item-position">
+                     Технический директор
+                   </div>
+                   <div class="club__item-name">
+                     Клейменов Сергей Васильевич
+                   </div>
+                 </div>
+               </div>
+               <div class="club__item">
+                 <div class="club__item-pic">
+                   <picture>
+                     <source srcset="img/photo-club-4-1170.jpg" media="(min-width: 1200px)">
+                     <source srcset="img/photo-club-4-960.jpg" media="(min-width: 992px)">
+                     <source srcset="img/photo-club-4-768.jpg" media="(min-width: 768px)">
+                     <img src="img/photo-club-4-320.jpg" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                   </picture>
+                 </div>
+                 <div class="club__item-info">
+                   <div class="club__item-position">
+                     Зам. ген. дир. по безопасности
+                   </div>
+                   <div class="club__item-name">
+                     Мифтахов Габдрашид Гатаевич
+                   </div>
+                 </div>
+               </div>
+             </div>
+              <div class="col-sm-6">
+                <div class="club__item">
+                  <div class="club__item-pic">
+                    <picture>
+                      <source srcset="img/photo-club-5-1170.jpg" media="(min-width: 1200px)">
+                      <source srcset="img/photo-club-5-960.jpg" media="(min-width: 992px)">
+                      <source srcset="img/photo-club-5-768.jpg" media="(min-width: 768px)">
+                      <img src="img/photo-club-5-320.jpg" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                    </picture>
+                  </div>
+                  <div class="club__item-info">
+                    <div class="club__item-position">
+                      Генеральный директор
+                    </div>
+                    <div class="club__item-name">
+                      Ахмедшин Наиль Богданович
+                    </div>
+                  </div>
+                </div>
+                <div class="club__item">
+                  <div class="club__item-pic">
+                    <picture>
+                      <source srcset="img/photo-club-6-1170.jpg" media="(min-width: 1200px)">
+                      <source srcset="img/photo-club-6-960.jpg" media="(min-width: 992px)">
+                      <source srcset="img/photo-club-6-768.jpg" media="(min-width: 768px)">
+                      <img src="img/photo-club-6-320.jpg" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                    </picture>
+                  </div>
+                  <div class="club__item-info">
+                    <div class="club__item-position">
+                      Коммерческий директо7
+                    </div>
+                    <div class="club__item-name">
+                      Барашов Марс Нижатович
+                    </div>
+                  </div>
+                </div>
+                <div class="club__item">
+                  <div class="club__item-pic">
+                    <picture>
+                      <source srcset="img/photo-club-7-1170.jpg" media="(min-width: 1200px)">
+                      <source srcset="img/photo-club-7-960.jpg" media="(min-width: 992px)">
+                      <source srcset="img/photo-club-7-768.jpg" media="(min-width: 768px)">
+                      <img src="img/photo-club-7-320.jpg" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                    </picture>
+                  </div>
+                  <div class="club__item-info">
+                    <div class="club__item-position">
+                      Генеральный менеджер
+                    </div>
+                    <div class="club__item-name">
+                      Клипов Иван Владимирович
+                    </div>
+                  </div>
+                </div>
+                <div class="club__item">
+                  <div class="club__item-pic">
+                    <picture>
+                      <source srcset="img/photo-club-8-1170.jpg" media="(min-width: 1200px)">
+                      <source srcset="img/photo-club-8-960.jpg" media="(min-width: 992px)">
+                      <source srcset="img/photo-club-8-768.jpg" media="(min-width: 768px)">
+                      <img src="img/photo-club-8-320.jpg" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                    </picture>
+                  </div>
+                  <div class="club__item-info">
+                    <div class="club__item-position">
+                      Пресс-атташе
+                    </div>
+                    <div class="club__item-name">
+                      Салахутдинова Алина Зульфатовна
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+        </section>
       </main>
       <aside class="page-aside col-md-offset-1 col-md-3 visible-md visible-lg">
         <section class="page-aside__birthday birthday">

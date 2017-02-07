@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>История клуба | Слайдер для ДР</title>
+  <title>Президент клуба - Магдеев Наиль Гамбарович</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <link type="image/png" href="img/favicon.png" rel="icon">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/selectivizr-min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,17 +71,17 @@
               <a class="nav-button nav-button--search page-header__search-btn" data-toggle="page-header__search" href="#">
                 <span class="visuallyhidden">Поиск</span>
               </a>
-              <input class="page-header__search-input" type="text">
+              <input class="page-header__search-input" type="text" style="height: 20px; width: 188px;">
             </div>
             <div class="page-header__flags page-header__flags--closed">
               <a class="nav-button nav-button--flag page-header__flags-btn" data-toggle="page-header__flags" href="#">
               </a>
               <div class="page-header__flags-list">
                 <a class="page-header__flags-link" href="#">
-                  <span class="visuallyhidden">usa</span>
+                  <span class="visuallyhidden">use</span>
                 </a>
                 <a class="page-header__flags-link" href="#">
-                  <span class="visuallyhidden">usa</span>
+                  <span class="visuallyhidden">use</span>
                 </a>
               </div>
             </div>
@@ -190,7 +193,7 @@
      <div class="page-header__container">
        <ul class="page-header__nav">
           <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">
+            <a class="page-header__nav-link page-header__nav-link--active">
               Администрация
             </a>
           </li>
@@ -200,7 +203,7 @@
             </a>
           </li>
           <li class="page-header__nav-item">
-            <a class="page-header__nav-link page-header__nav-link--active">
+            <a class="page-header__nav-link" href="#">
               История
             </a>
           </li>
@@ -233,7 +236,7 @@
         <button class="page-header__nav-btn dropdown-btn" data-toggle="page-header__nav-mobile"><span>Ещё</span></button>
         <ul class="page-header__nav-mobile page-header__nav-mobile--closed">
           <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">
+            <a class="page-header__nav-link page-header__nav-link--active">
               Администрация
             </a>
           </li>
@@ -243,7 +246,7 @@
             </a>
           </li>
           <li class="page-header__nav-item">
-            <a class="page-header__nav-link page-header__nav-link--active">
+            <a class="page-header__nav-link" href="#">
               История
             </a>
           </li>
@@ -278,78 +281,34 @@
   </header>
   <div class="page-container container">
     <div class="row">
-      <main class="main main--history col-md-8">
-        <h1 class="main__title">
-          История ФК &laquo;КАМАЗ&raquo;
-        </h1>
-        <div class="main__pic">
-          <picture>
-            <source srcset="img/photo-history-1170.jpg" media="(min-width: 1200px)">
-            <source srcset="img/photo-history-960.jpg" media="(min-width: 992px)">
-            <source srcset="img/photo-history-768.jpg" media="(min-width: 768px)">
-            <img src="img/photo-history-320.jpg" alt="История клуба">
-          </picture>
-        </div>
-        <div class="main__history-nav">
-          <button class="main__history-nav-btn main__history-nav-btn--next">
-            <span class="visuallyhidden">Вперед</span>
-          </button>
-          <ul class="main__history-nav-list">
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1981</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1993</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1994</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1995</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1997</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">1999</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2004</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2005</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2006</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2008</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2009</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2010</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2011</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2012</a>
-            </li>
-            <li class="main__history-nav-item">
-              <a class="main__history-nav-link" href="#">2013</a>
-            </li>
-          </ul>
-        </div>
-        <article class="main__article">
-          <h2 class="main__article-title">
-            Первые шаги, первые успехи
-          </h2>
-          <div class="main__article-text">
-            Клуб основан 11 ноября 1981 года на прессово-рамном заводе «КАМАЗа». За основу взята цеховая команда ТСО. До 1988 года команда участвовала в городских и республиканских первенствах. С 1988 по 1991 год клуб выступал во второй лиге первенства СССР. В 1992 году команда попала в первую лигу первенства России. Сезон 1992 прошёл для команды очень удачно. Только за первые 18 туров у «КАМАЗа» было всего 3 поражения и ни одной ничьей (37 мячей забито, 10 пропущено). В таком же духе челнинцы продолжили и во втором круге, в конце концов «КАМАЗ» одержал 12 крупных побед (6:1, 6:2, дважды 5:0, 5:1, четыре раза по 4:0, трижды 3:0), вследствие чего занял первое место по итогом сезона и с первой же попытки получил путёвку в Высшую лигу.
+      <main class="main main--person col-md-8">
+        <a class="main__go-back" href="#">
+          &lt; Вернуться назад
+        </a>
+        <div class="main__person person">
+          <h1 class="person__title">
+            Магдеев Наиль Гамбарович
+          </h1>
+
+          <div class="person__pic">
+            <picture>
+              <source srcset="img/photo-person-1170.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photo-person-960.jpg" media="(min-width: 992px)">
+              <source srcset="img/photo-person-768.jpg" media="(min-width: 768px)">
+              <img src="img/photo-person-320.jpg" alt="Магдеев Наиль Гамбарович">
+            </picture>
           </div>
-        </article>
+          <div class="person__footer">
+            <dl class="person__def-list">
+              <dt class="person__termin">день рождения:</dt>
+              <dd class="person__defenition">12.10.1959</dd>
+            </dl>
+            <dl class="person__def-list">
+              <dt class="person__termin">должность:</dt>
+              <dd class="person__defenition">президент клуба</dd>
+            </dl>
+          </div>
+        </div>
       </main>
       <aside class="page-aside col-md-offset-1 col-md-3 visible-md visible-lg">
         <section class="page-aside__birthday birthday">
@@ -393,20 +352,6 @@
             </a>
 
           </div>
-        </section>
-        <section class="page-aside__birthday birthday">
-          <h2 class="birthday__title">
-            Дни рождения
-          </h2>
-          <figure class="birthday__fig">
-            <div class="birthday__pic">
-              <img src="img/photo-birthday.png" alt="Клейменов Сергей Васильевич" height="207" width="166">
-            </div>
-            <figcaption class="birthday__figcaption">
-              <span class="birthday__date">22 ноября</span>
-              <span class="birthday__name">Клейменов Сергей Васильевич</span>
-            </figcaption>
-          </figure>
         </section>
       </aside>
     </div>
@@ -563,7 +508,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>

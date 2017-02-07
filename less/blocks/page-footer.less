@@ -141,13 +141,16 @@
     left: 0;
     right: 0;
     top: 25px;
-    padding: 10px;
-    padding-left: 0;
-    padding-top: 35px;
+    padding: 35px 10px 35px 0;
     border-top: 1px solid #83858b;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: #061b4a;
+
+    @media @screen-sm {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
   &__subnav--closed {
     display: none;
@@ -227,9 +230,13 @@
       margin-right: 56px;
       padding-bottom: 8px;
     }
+    &__subnav {
+      border: none;
+    }
     &__subnav--closed {
       position: static;
       display: block;
+      border: none;
       background-color: transparent;
     }
     &__subnav-link {
@@ -271,6 +278,17 @@
       float: left;
       width: 400px;
       padding: 0;
+    }
+  }
+  @media @screen-lg {
+    &__nav-item {
+      margin-right: 68px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__social-links {
+      width: 550px;
     }
   }
 }

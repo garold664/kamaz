@@ -1,0 +1,52 @@
+.club {
+  &__list {
+    .reset;
+    .item;
+  }
+  &__item {
+    .clearfix;
+    margin-bottom: 20px;
+  }
+  &__item-pic {
+    float: left;
+  }
+  &__item-info {
+    padding-left: 145px;
+  }
+  &__item-position {
+    font-size: 14px;
+    line-height: 1;
+  }
+  &__item-name {
+    padding-top: 10px;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  @media @screen-sm {
+    &__item {
+      margin-bottom: 45px;
+    }
+    &__item-info {
+      padding-left: 185px;
+    }
+  }
+  @media @screen-md {
+    &__item {
+      margin-bottom: 40px;
+    }
+    &__item-info {
+      padding-left: 160px;
+    }
+    &__item-name {
+      padding-right: 10px;
+    }
+  }
+  @media @screen-md {
+    &__item-info {
+      padding-left: 200px;
+    }
+  }
+}

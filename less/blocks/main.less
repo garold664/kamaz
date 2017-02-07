@@ -117,3 +117,46 @@
   }
 
 }
+
+
+/* PERSON */
+
+.main {
+  &__go-back {
+    color: #8b8d91;
+    font-size: 14px;
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  &--person {
+    padding: 15px;
+  }
+
+  @media @screen-md {
+    &--person {
+      padding-bottom: 96px;
+    }
+  }
+}
+
+/* CLUB */
+
+.main {
+  &__select {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  @media @screen-sm {
+    &--club &__select {
+        display: none;
+    }
+  }
+  @media @screen-md {
+    &--club {
+      padding-top: 35px;
+    }
+  }
+}

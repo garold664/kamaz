@@ -821,8 +821,6 @@ body {
   background: none;
 }
 .carousel-control .carousel__arrow {
-  width: auto;
-  height: auto;
   top: 35%;
 }
 .carousel__arrow:after {
@@ -1124,8 +1122,9 @@ body {
 }
 .page-header__nav-wrapper {
   position: relative;
-  min-height: 60px;
+  min-height: 67px;
   margin-top: -46px;
+  background-color: #fff;
   border-bottom: 10px solid #f0f1f2;
 }
 .page-header__nav {
@@ -1139,7 +1138,7 @@ body {
   left: 0;
   right: 0;
   padding: 15px;
-  top: 58px;
+  top: 68px;
   z-index: 100;
   background-color: #fff;
   border-bottom-left-radius: 5px;
@@ -1188,7 +1187,6 @@ body {
   content: "";
   display: inline-block;
   background-image: url("../img/menu-icon.png");
-  background-position: ce;
   background-repeat: no-repeat;
   width: 14px;
   height: 10px;
@@ -1296,9 +1294,7 @@ body {
   left: 0;
   right: 0;
   top: 25px;
-  padding: 10px;
-  padding-left: 0;
-  padding-top: 35px;
+  padding: 35px 10px 35px 0;
   border-top: 1px solid #83858b;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1476,6 +1472,23 @@ body {
   border-bottom: 3px solid #da251d;
   color: #000;
 }
+/* PERSON */
+.main__go-back {
+  color: #8b8d91;
+  font-size: 14px;
+}
+.main__go-back:hover {
+  color: #000;
+  text-decoration: none;
+}
+.main--person {
+  padding: 15px;
+}
+/* CLUB */
+.main__select {
+  width: 100%;
+  margin-bottom: 32px;
+}
 .nav-button {
   display: inline-block;
   vertical-align: middle;
@@ -1580,6 +1593,66 @@ body {
 }
 .page-container {
   background-color: #fff;
+}
+.person__title {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 8px 0 25px;
+}
+.person__pic {
+  padding-bottom: 10px;
+}
+.person__footer {
+  padding-bottom: 90px;
+}
+.person__def-list {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.person__termin {
+  display: inline-block;
+  width: 90px;
+  color: #606060;
+}
+.person__defenition {
+  font-family: "PT Sans", Arial, sans-serif;
+  display: inline-block;
+  width: 190px;
+  margin: 0;
+}
+.club__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.club__item {
+  margin-bottom: 20px;
+}
+.club__item::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.club__item-pic {
+  float: left;
+}
+.club__item-info {
+  padding-left: 145px;
+}
+.club__item-position {
+  font-size: 14px;
+  line-height: 1;
+}
+.club__item-name {
+  padding-top: 10px;
+  padding-right: 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: bold;
 }
 /* end index.html*/
 /*end form.html*/
@@ -1903,7 +1976,7 @@ body {
   .page-header__nav .page-header__nav-item:nth-child(n + 5) {
     display: none;
   }
-  .page-header__nav-mobile .page-header__nav-item:nth-child(-n + 5) {
+  .page-header__nav-mobile .page-header__nav-item:nth-child(-n + 4) {
     display: none;
   }
   .page-header__nav-mobile--closed {
@@ -1966,6 +2039,10 @@ body {
   .page-footer__nav-link {
     padding-bottom: 10px;
   }
+  .page-footer__subnav {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .page-footer__nav-item {
     display: inline-block;
     vertical-align: top;
@@ -1973,9 +2050,13 @@ body {
     margin-right: 56px;
     padding-bottom: 8px;
   }
+  .page-footer__subnav {
+    border: none;
+  }
   .page-footer__subnav--closed {
     position: static;
     display: block;
+    border: none;
     background-color: transparent;
   }
   .page-footer__subnav-link {
@@ -2039,8 +2120,28 @@ body {
   .main__history-nav-btn--next {
     display: none;
   }
+  .main--club .main__select {
+    display: none;
+  }
   .nav-button--menu {
     display: none;
+  }
+  .person__title {
+    font-size: 36px;
+    line-height: 40px;
+    padding: 30px 0 40px;
+  }
+  .person__pic {
+    padding-bottom: 25px;
+  }
+  .person__footer {
+    padding-bottom: 0;
+  }
+  .club__item {
+    margin-bottom: 45px;
+  }
+  .club__item-info {
+    padding-left: 185px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2295,6 +2396,9 @@ body {
   .page-header__buttons {
     margin-left: 465px;
   }
+  .page-header__nav-btn {
+    float: none;
+  }
   .page-header__user-menu {
     margin-right: 28px;
   }
@@ -2344,10 +2448,28 @@ body {
   .main {
     padding-bottom: 128px;
   }
+  .main--person {
+    padding-bottom: 96px;
+  }
+  .main--club {
+    padding-top: 35px;
+  }
   .page-container {
     background-image: url("../img/bg-main-960.jpg");
     background-repeat: repeat-y;
     background-size: 100% auto;
+  }
+  .club__item {
+    margin-bottom: 40px;
+  }
+  .club__item-info {
+    padding-left: 160px;
+  }
+  .club__item-name {
+    padding-right: 10px;
+  }
+  .club__item-info {
+    padding-left: 200px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2589,6 +2711,7 @@ body {
     margin-right: 0;
   }
   .page-header__nav-btn {
+    float: right;
     width: 87px;
   }
   .page-header__title-inner {
@@ -2603,6 +2726,15 @@ body {
   .page-footer__wrapper:after {
     width: 1170px;
     margin: 0 -14px;
+  }
+  .page-footer__nav-item {
+    margin-right: 68px;
+  }
+  .page-footer__nav-item:last-child {
+    margin-right: 0;
+  }
+  .page-footer__social-links {
+    width: 550px;
   }
   .logo {
     top: 5px;
@@ -2619,6 +2751,9 @@ body {
   }
   .birthday__figcaption {
     width: 255px;
+  }
+  .person__footer {
+    padding-bottom: 226px;
   }
 }
 @media (max-width: 767px) {
