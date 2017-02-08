@@ -22,12 +22,39 @@ $(document).ready(function() {
   setDropdownToggle("page-header__flags-btn");
 
   var nextBtn = $(".main__history-nav-btn--next");
+  var prevBtn = $(".main__history-nav-btn--prev");
   var historyList = $(".main__history-nav-list");
   var historyItem = $(".main__history-nav-item");
 
   nextBtn.on("click", function(event) {
     historyList.animate({
-      left: "-=150"
+      marginLeft: "-=150"
+    }, function(){
+      var ml = historyList.css("margin-left");
+      console.log(ml);
+      if (ml == "-150px") {
+        prevBtn.css("display", "inline-block")
+      }
+      if (ml == "-450px") {
+        nextBtn.css("display", "none")
+      }
+    });
+    
+  });
+  prevBtn.on("click", function(event) {
+    historyList.animate({
+      marginLeft: "+=150"
+    }, function(){
+      var ml = historyList.css("margin-left");
+      console.log(historyList.css("marginLeft"));
+      if (ml == "0px") {
+        prevBtn.css("display", "none");
+      }
+      if (ml == "-300px") {
+        nextBtn.css("display", "inline-block");
+      }
+
+      console.log(historyList.css("marginLeft"));
     });
   });
 

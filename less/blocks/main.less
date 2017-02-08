@@ -47,10 +47,11 @@
 
   &__history-nav {
     position: relative;
+    width: 280px;
     overflow: hidden;
-    height: 100px;
     padding: 25px 5px;
     @media @screen-sm {
+      width: auto;
       padding: 37px 5px 45px;
     }
   }
@@ -59,29 +60,41 @@
     position: absolute;
     z-index: 10;
     right: 0;
-    top: 17px;
+    top: 15px;
     padding: 15px 20px;
     padding-left: 30px;
-    border-bottom: 3px solid #f8d3d2;
     background-color: #fff;
     &:after {
       content: "";
       .icon;
       background-repeat: no-repeat;
     }
-
+    &--prev {
+      display: none;
+      right: auto;
+      left: 0;
+    }
+    &--prev:after {
+      background-image: url("../img/arrow-left-icon.png");
+      width: 7px;
+      height: 10px;
+    }
     &--next:after {
       background-image: url("../img/arrow-right-icon.png");
-      width: 8px;
-      height: 13px;
+      width: 7px;
+      height: 10px;
     }
   }
   &__history-nav-list {
-    position: absolute;
+    margin-left: 0;
     font-size: 0;
     .item;
     .reset;
     width: 870px;
+    border-bottom: 3px solid #f8d3d2;
+    @media @screen-sm {
+      width: 625px;
+    }
   }
 
   &__history-nav-item {
@@ -89,19 +102,31 @@
     vertical-align: middle;
   }
   &__history-nav-link {
+    position: relative;
     font-family: @cuprum;
     font-size: 16px;
     display: inline-block;
     vertical-align: middle;
     padding: 10px;
     color: #626262;
-    border-bottom: 3px solid #f8d3d2;
+    &:after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      z-index: 100;
+      right: 0;
+      left: 0;
+      bottom: -3px;
+    }
 
     &:hover, &:active {
       text-decoration: none;
-      border-bottom: 3px solid #da251d;
       color: #000;
     }
+    &--active:after {
+        border-bottom: 3px solid #da251d;
+    }
+
     @media @screen-sm {
       font-size: 14px;
       padding-left: 9px;
@@ -111,7 +136,7 @@
   }
 
   @media @screen-sm {
-    &__history-nav-btn--next {
+    &__history-nav-btn {
       display: none;
     }
   }

@@ -1446,8 +1446,8 @@ body {
 }
 .main__history-nav {
   position: relative;
+  width: 280px;
   overflow: hidden;
-  height: 100px;
   padding: 25px 5px;
 }
 .main__history-nav-btn {
@@ -1462,10 +1462,9 @@ body {
   position: absolute;
   z-index: 10;
   right: 0;
-  top: 17px;
+  top: 15px;
   padding: 15px 20px;
   padding-left: 30px;
-  border-bottom: 3px solid #f8d3d2;
   background-color: #fff;
 }
 .main__history-nav-btn:after {
@@ -1474,37 +1473,59 @@ body {
   vertical-align: middle;
   background-repeat: no-repeat;
 }
+.main__history-nav-btn--prev {
+  display: none;
+  right: auto;
+  left: 0;
+}
+.main__history-nav-btn--prev:after {
+  background-image: url("../img/arrow-left-icon.png");
+  width: 7px;
+  height: 10px;
+}
 .main__history-nav-btn--next:after {
   background-image: url("../img/arrow-right-icon.png");
-  width: 8px;
-  height: 13px;
+  width: 7px;
+  height: 10px;
 }
 .main__history-nav-list {
-  position: absolute;
+  margin-left: 0;
   font-size: 0;
   list-style: none;
   margin: 0;
   padding: 0;
   width: 870px;
+  border-bottom: 3px solid #f8d3d2;
 }
 .main__history-nav-item {
   display: inline-block;
   vertical-align: middle;
 }
 .main__history-nav-link {
+  position: relative;
   font-family: "Cuprum", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
   display: inline-block;
   vertical-align: middle;
   padding: 10px;
   color: #626262;
-  border-bottom: 3px solid #f8d3d2;
+}
+.main__history-nav-link:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  z-index: 100;
+  right: 0;
+  left: 0;
+  bottom: -3px;
 }
 .main__history-nav-link:hover,
 .main__history-nav-link:active {
   text-decoration: none;
-  border-bottom: 3px solid #da251d;
   color: #000;
+}
+.main__history-nav-link--active:after {
+  border-bottom: 3px solid #da251d;
 }
 /* PERSON */
 .main__go-back {
@@ -1650,6 +1671,7 @@ body {
 .page-container {
   background-color: #fff;
 }
+/* end index.html*/
 .person__title {
   margin: 0;
   padding: 0;
@@ -1711,8 +1733,58 @@ body {
   line-height: 1.2;
   font-weight: bold;
 }
-/* end index.html*/
-/*end form.html*/
+.slider {
+  background-color: #fff;
+}
+.slider__item {
+  padding-top: 177px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-slider-320.jpg");
+}
+.slider__content {
+  background-color: #fff;
+}
+.slider__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  color: #0a1529;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+.slider__text {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.slider__footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.slider__footer-link {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #33478e;
+}
+.slider .carousel-indicators {
+  bottom: auto;
+  top: 130px;
+}
+.slider .carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 0;
+}
+/*end main-page.html*/
 /*нужно добавить блок для link, btn */
 @media (min-width: 768px) {
   .container {
@@ -2192,7 +2264,11 @@ body {
     line-height: 20px;
   }
   .main__history-nav {
+    width: auto;
     padding: 37px 5px 45px;
+  }
+  .main__history-nav-list {
+    width: 625px;
   }
   .main__history-nav-link {
     font-size: 14px;
@@ -2200,7 +2276,7 @@ body {
     padding-right: 9px;
     padding-bottom: 0;
   }
-  .main__history-nav-btn--next {
+  .main__history-nav-btn {
     display: none;
   }
   .main--club .main__select {
@@ -2225,6 +2301,9 @@ body {
   }
   .club__item-info {
     padding-left: 185px;
+  }
+  .slider__item {
+    background-image: url("../img/bg-slider-768.jpg");
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2553,6 +2632,9 @@ body {
   .club__item-info {
     padding-left: 200px;
   }
+  .slider__item {
+    background-image: url("../img/bg-slider-960.jpg");
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .visible-md {
@@ -2830,6 +2912,9 @@ body {
   }
   .club__item-info {
     height: 170px;
+  }
+  .slider__item {
+    background-image: url("../img/bg-slider-1170.png");
   }
 }
 @media (max-width: 767px) {
