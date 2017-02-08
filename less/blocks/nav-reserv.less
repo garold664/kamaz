@@ -1,27 +1,23 @@
 .nav {
-  position: relative;
-  min-height: 67px;
-  margin-top: -55px;
+  .item;
+  .reset;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  top: 68px;
+  z-index: 100;
   background-color: #fff;
-  border-bottom: 10px solid #f0f1f2;
-
-  &__list {
-    .item;
-    .reset;
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    padding: 15px;
-    top: 68px;
-    z-index: 100;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+  &__wrapper {
+    position: relative;
+    min-height: 67px;
+    margin-top: -55px;
     background-color: #fff;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; 
-  }
-  &__list--closed {
-    position: static;
-    padding: 0;
+    border-bottom: 10px solid #f0f1f2;
   }
 
   &__link {
@@ -35,10 +31,14 @@
       text-decoration: none;
     }
   }
-  &__list--closed &__link {
+  &--closed {
+    position: static;
+    padding: 0;
+  }
+  &--closed &__link {
     display: none;
   }
-  &__list--closed &__link--active {
+  &--closed &__link--active {
     display: block;
     padding: 15px 15px;
   } 
@@ -67,33 +67,23 @@
   }
 
   @media @screen-sm {
-    min-height: auto;
-    color: #fff;
-    border: none;
-    background-color: transparent; 
+    .item;
+    .reset;
+    display: inline-block;
+    background-color: #17224c;
 
-    & .page-header__container {
+    &__wrapper {
+      min-height: auto;
+      color: #fff;
+      border: none;
+      background-color: transparent;
+    }
+    &__wrapper .page-header__container {
       background-color: #17224c;
       overflow: hidden;
       position: relative;
     }
 
-    &__list {
-      top: 0;
-      .item;
-      .reset;
-      display: inline-block;
-      background-color: #17224c;   
-      margin-left: -470px;
-      transition: all 1s ease;   
-    }
-    &__list--closed {
-      position: absolute;
-      width: 1240px;
-      margin-left: 0;
-      transition: all 1s ease;
-    }
-    
     &__btn {
       position: relative;
       right: auto;
@@ -140,7 +130,7 @@
       display: inline-block;
       vertical-align: middle;
     }
-    &__list--closed &__link {
+    &--closed &__link {
       display: inline-block;
     }
     &__link {
@@ -167,17 +157,27 @@
     }  
 
 
+    top: 0;
 
     &__link {
       display: inline-block;
     }
-    & .page-header__container {
+    &__wrapper .page-header__container {
       background-color: #17224c;
       overflow: hidden;
       position: relative;
       height: 55px;
     }
 
+    margin-left: -470px;
+    transition: all 1s ease;
+
+    &--closed {
+      position: absolute;
+      width: 1240px;
+      margin-left: 0;
+      transition: all 1s ease;
+    }
 
     &__btn {
       position: absolute;
@@ -213,12 +213,9 @@
   }
 
   @media @screen-md {
-    &__list {
-      margin-left: -190px;
-    }
-    
+    margin-left: -190px;
 
-    &__list--closed {
+    &--closed {
       margin-left: 0;
     }
 

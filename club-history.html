@@ -24,18 +24,19 @@
     }
     .page-header__menu-link {
       width: 80px;
+
     }
     .page-header__menu-btn {
       width: 110px;
     }
-    .page-header__nav-item {
+    .nav__item {
       max-width: 150px;
       font-size: 12px;
     }
-    .page-header__nav-link--active {
+    .nav__link--active {
       min-width: 130px;
     }
-    .page-header__nav-link {
+    .nav__link {
       font-size: 13px;
     }
   </style>
@@ -200,93 +201,51 @@
         </div>
       </div>
     </div>
-    <nav class="page-header__nav-wrapper">
+    <nav class="nav">
      <div class="page-header__container">
-       <ul class="page-header__nav">
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">
+       <ul class="nav__list nav__list--closed">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
               Администрация
             </a>
           </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
               Контакты
             </a>
           </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link page-header__nav-link--active">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active">
               История
             </a>
           </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
               Вакансии
             </a>
           </li>
-          <li class="page-header__nav-item hidden-xs hidden-sm">
-            <a class="page-header__nav-link" href="#">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
               Инфракструктура
             </a>
           </li>
-          <li class="page-header__nav-item hidden-sm visible-lg-inline-block">
-            <a class="page-header__nav-link" href="#">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
               РЦПФ
             </a>
           </li>
-          <li class="page-header__nav-item hidden-sm visible-lg-inline-block">
-            <a class="page-header__nav-link" href="#">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
               Наши воспитанники
             </a>
           </li>
-          <li class="page-header__nav-item hidden">
-            <a class="page-header__nav-link" href="#">
+          <li class="nav__item ">
+            <a class="nav__link" href="#">
               Еще одна ссылка
             </a>
           </li>
         </ul>
-        <button class="page-header__nav-btn dropdown-btn" data-toggle="page-header__nav-mobile"><span>Ещё</span></button>
-        <ul class="page-header__nav-mobile page-header__nav-mobile--closed">
-          <li class="page-header__nav-item visible-xs">
-            <a class="page-header__nav-link" href="#">
-              Администрация
-            </a>
-          </li>
-          <li class="page-header__nav-item visible-xs">
-            <a class="page-header__nav-link" href="#">
-              Контакты
-            </a>
-          </li>
-          <li class="page-header__nav-item visible-xs">
-            <a class="page-header__nav-link page-header__nav-link--active">
-              История
-            </a>
-          </li>
-          <li class="page-header__nav-item visible-xs">
-            <a class="page-header__nav-link" href="#">
-              Вакансии
-            </a>
-          </li>
-          <li class="page-header__nav-item hidden-md hidden-lg">
-            <a class="page-header__nav-link" href="#">
-              Инфракструктура
-            </a>
-          </li>
-          <li class="page-header__nav-item hidden-lg">
-            <a class="page-header__nav-link" href="#">
-              РЦПФ
-            </a>
-          </li>
-          <li class="page-header__nav-item hidden-lg">
-            <a class="page-header__nav-link" href="#">
-              Наши воспитанники
-            </a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">
-              Еще одна ссылка
-            </a>
-          </li>
-        </ul>
+        <button class="nav__btn" data-toggle="nav__list"><span>Ещё</span></button>
      </div>
     </nav>
   </header>
