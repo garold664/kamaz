@@ -2657,7 +2657,29 @@ body {
     padding-left: 200px;
   }
   .slider__item {
+    padding-top: 68px;
+    padding-bottom: 68px;
     background-image: url("../img/bg-slider-960.jpg");
+  }
+  .slider__content {
+    width: 370px;
+  }
+  .slider__title {
+    font-size: 24px;
+  }
+  .slider__text {
+    font-size: 16px;
+  }
+  .slider .carousel-indicators {
+    top: auto;
+    bottom: -8px;
+    margin-left: -30%;
+  }
+  .slider .carousel-indicators li {
+    border-color: #fff;
+  }
+  .slider .carousel-indicators li.active {
+    background-color: #fff;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {

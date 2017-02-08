@@ -12,6 +12,8 @@
       background-image: url("../img/bg-slider-768.jpg");
     }
     @media @screen-md {
+      padding-top: 68px;
+      padding-bottom: 68px;
       background-image: url("../img/bg-slider-960.jpg");
     }
     @media @screen-lg {
@@ -29,6 +31,9 @@
       padding-left: 30px;
       padding-right: 30px;
     }
+    @media @screen-md {
+      width: 370px;
+    }
   }
   &__title {
     .reset;
@@ -38,6 +43,9 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
+    @media @screen-md {
+      font-size: 24px;
+    }
   }
   
   &__text {
@@ -48,6 +56,9 @@
     padding: 16px 0;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
+    @media @screen-md {
+      font-size: 16px;
+    }
   }
   &__footer {
     padding-top: 10px;
@@ -68,6 +79,11 @@
       bottom: -8px;
       margin-left: -55%;
     }
+    @media @screen-md {
+      top: auto;
+      bottom: -8px;
+      margin-left: -30%;
+    }
   }
   & .carousel-indicators li {
     width: 8px;
@@ -77,6 +93,12 @@
       border-color: #000;
       &.active {
         background-color: #000;
+      }
+    }
+    @media @screen-md {
+      border-color: #fff;
+      &.active {
+        background-color: #fff;
       }
     }
   }
