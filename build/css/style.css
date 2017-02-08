@@ -1742,6 +1742,11 @@ body {
   background-repeat: no-repeat;
   background-image: url("../img/bg-slider-320.jpg");
 }
+.slider__item .container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .slider__content {
   background-color: #fff;
 }
@@ -2303,7 +2308,26 @@ body {
     padding-left: 185px;
   }
   .slider__item {
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-image: url("../img/bg-slider-768.jpg");
+  }
+  .slider__content {
+    float: right;
+    width: 356px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .slider .carousel-indicators {
+    top: auto;
+    bottom: -8px;
+    margin-left: -55%;
+  }
+  .slider .carousel-indicators li {
+    border-color: #000;
+  }
+  .slider .carousel-indicators li.active {
+    background-color: #000;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
