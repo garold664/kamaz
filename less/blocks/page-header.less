@@ -23,9 +23,6 @@
       width: 1170px;
     }
   }
-  &__container--menu {
-    position: relative;
-  }
   &__wrapper {
     padding-top: 12px;
     padding-bottom: 10px;
@@ -334,7 +331,7 @@
     background-repeat: no-repeat;
     background-position: 100% 0;
   }
-
+/* 
   &__nav-wrapper {
     position: relative;
     min-height: 67px;
@@ -344,7 +341,7 @@
   }
   &__nav {
     display: none;
-  }
+  } */
   /* 
   &__nav-mobile {
     .item;
@@ -382,7 +379,7 @@
     padding: 15px 15px;
   } */
   
-  &__nav {
+  /* &__nav {
     .item;
     .reset;
     display: block;
@@ -418,10 +415,10 @@
     display: block;
     padding: 15px 15px;
   } 
-
-
-
-
+  
+  
+  
+  
   &__nav-btn {
     .btn;
     position: absolute;
@@ -443,7 +440,7 @@
     & span {
       .visuallyhidden;
     }
-  }
+  } */
 
   @media @screen-sm {
     &__headline {
@@ -519,7 +516,7 @@
     &__dropdown-link {
       font-size: 18px;
     }
-
+/* 
     &__nav-wrapper {
       min-height: auto;
       color: #fff;
@@ -544,7 +541,7 @@
       font-size: 14px;
       opacity: 0.5;
       filter: alpha(opacity=50);
-      width: 100px; /*135px*/
+      width: 100px; 135px
       padding: 14px;
       text-align: center;
       background-image: url("../img/button-shadow.png");
@@ -618,8 +615,8 @@
       color: #000;
       opacity: 1;
       filter: alpha(opacity=100);
-    }  }
-
+    }   */
+}
   @media @screen-md {
     &__wrapper &__container {
       text-align: right;
@@ -632,9 +629,6 @@
     }
     &__buttons {
       margin-left: 465px;
-    }
-    &__nav-btn {
-      float: none;
     }
     &__user-menu {
       margin-right: 28px;
@@ -659,11 +653,11 @@
     }
     &__user-menu {
       margin-right: 0;
-    }
+    }/* 
     &__nav-btn {
       float: right;
       width: 87px;
-    }
+    } */
     &__title-inner {
       background-image: url("../img/bg-header-right-1170.jpg");
     }
@@ -676,65 +670,65 @@
 
     /*test*/
   @media @screen-sm {
-    &__nav {
-      top: 0;
-    }
-    &__nav &__nav-link {
-      display: inline-block;
-    }
-    &__nav-wrapper &__container {
-      background-color: #17224c;
-      overflow: hidden;
-      position: relative;
-      height: 55px;
-    }
-    &__nav {
-      margin-left: -470px;
-      transition: all 1s ease;
-    }
-    &__nav--closed {
-      position: absolute;
-      width: 1240px;
-      margin-left: 0;
-      transition: all 1s ease;
-    }
-
-    &__nav-btn {
-      position: absolute;
-      z-index: 110;
-      left: auto;
-      right: 0;
-      top: 0;
-      color: #919fd3;
-      background-color: #17224c;
-      opacity: 1;
-      filter: alpha(opacity=100);
-      width: 135px;
-      &:after {
-        opacity: .5;
-        filter: alpha(opacity=50);
-      }
-      &:hover:after {
-        opacity: 1;
-        filter: alpha(opacity=100);
-      }
-    }
-
-    &__nav-btn--opened {
-      right: auto;
-      left: 0;
-      &:after {
-        left: 25px;
-        background-repeat: no-repeat;
-        background-image: url("../img/arrow-white-left-icon.png");
-      }
-    }
+ /*    &__nav {
+   top: 0;
+ }
+ &__nav &__nav-link {
+   display: inline-block;
+ }
+ &__nav-wrapper &__container {
+   background-color: #17224c;
+   overflow: hidden;
+   position: relative;
+   height: 55px;
+ }
+ &__nav {
+   margin-left: -470px;
+   transition: all 1s ease;
+ }
+ &__nav--closed {
+   position: absolute;
+   width: 1240px;
+   margin-left: 0;
+   transition: all 1s ease;
+ }
+ 
+ &__nav-btn {
+   position: absolute;
+   z-index: 110;
+   left: auto;
+   right: 0;
+   top: 0;
+   color: #919fd3;
+   background-color: #17224c;
+   opacity: 1;
+   filter: alpha(opacity=100);
+   width: 135px;
+   &:after {
+     opacity: .5;
+     filter: alpha(opacity=50);
+   }
+   &:hover:after {
+     opacity: 1;
+     filter: alpha(opacity=100);
+   }
+ }
+ 
+ &__nav-btn--opened {
+   right: auto;
+   left: 0;
+   &:after {
+     left: 25px;
+     background-repeat: no-repeat;
+     background-image: url("../img/arrow-white-left-icon.png");
+   }
+ } */
   }
   @media @screen-md {
-    &__nav-btn {
+    /* &__nav-btn {
       width: 160px;
     }
- 
+     
     &__nav {
       margin-left: -190px;
     }
@@ -745,15 +739,15 @@
       &:after {
         left: 35px;
       }
-    }
+    } */
   }
 
-  @media @screen-lg {   
+  @media @screen-lg {   /* 
     &__nav-btn--opened {
       &:after {
         left: 0;
       }
-    }
+    } */
   }
 
 

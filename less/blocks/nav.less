@@ -1,5 +1,16 @@
 .nav {
-  display: none
+  .item;
+  .reset;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  top: 68px;
+  z-index: 100;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   
   &__wrapper {
     position: relative;
@@ -8,4 +19,232 @@
     background-color: #fff;
     border-bottom: 10px solid #f0f1f2;
   }
+
+  &__link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #131d40;
+    padding: 5px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &--closed {
+    position: static;
+    padding: 0;
+  }
+  &--closed &__link {
+    display: none;
+  }
+  &--closed &__link--active {
+    display: block;
+    padding: 15px 15px;
+  } 
+
+  &__btn {
+    .btn;
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    float: right;
+    &:hover {
+      opacity: 0.7;
+      filter: alpha(opacity=70);
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      background-image: url("../img/menu-icon.png");
+      background-repeat: no-repeat;
+      width: 14px;
+      height: 10px;
+    }
+    & span {
+      .visuallyhidden;
+    }
+  }
+
+  @media @screen-sm {
+    .item;
+    .reset;
+    display: inline-block;
+    background-color: #17224c;
+
+    &__wrapper {
+      min-height: auto;
+      color: #fff;
+      border: none;
+      background-color: transparent;
+    }
+    &__wrapper .page-header__container {
+      background-color: #17224c;
+      overflow: hidden;
+      position: relative;
+    }
+
+    &__btn {
+      position: relative;
+      right: auto;
+      top: auto;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+      width: 100px; /*135px*/
+      padding: 14px;
+      text-align: center;
+      background-image: url("../img/button-shadow.png");
+      background-repeat: repeat-y;
+      span {
+        position: static;
+        display: inline;
+        width: auto;
+        height: auto;
+      }
+      &:hover {
+        color: #fff;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      &:before {
+        display: none;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -7px;
+        .icon;
+        background-image: url("../img/arrow-white-right-icon.png");
+        width: 8px;
+        height: 13px;
+        margin-left: 10px;
+      }
+    }
+
+      
+    &__item {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &--closed &__link {
+      display: inline-block;
+    }
+    &__link {
+      color: #fff;
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+      padding: 14px;
+      text-align: center;
+      min-width: 150px;
+      background-image: url("../img/button-shadow.png");
+      background-repeat: repeat-y;
+      &:hover {
+        color: #fff;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+    }
+    &__link--active {
+      background-color: #fff;
+      background-image: none;
+      color: #000;
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }  
+
+
+    top: 0;
+
+    &__link {
+      display: inline-block;
+    }
+    &__wrapper .page-header__container {
+      background-color: #17224c;
+      overflow: hidden;
+      position: relative;
+      height: 55px;
+    }
+
+    margin-left: -470px;
+    transition: all 1s ease;
+
+    &--closed {
+      position: absolute;
+      width: 1240px;
+      margin-left: 0;
+      transition: all 1s ease;
+    }
+
+    &__btn {
+      position: absolute;
+      z-index: 110;
+      left: auto;
+      right: 0;
+      top: 0;
+      color: #919fd3;
+      background-color: #17224c;
+      opacity: 1;
+      filter: alpha(opacity=100);
+      width: 135px;
+      &:after {
+        opacity: .5;
+        filter: alpha(opacity=50);
+      }
+      &:hover:after {
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+    }
+
+    &__btn--opened {
+      right: auto;
+      left: 0;
+      &:after {
+        left: 25px;
+        background-repeat: no-repeat;
+        background-image: url("../img/arrow-white-left-icon.png");
+      }
+    }
+
+  }
+
+  @media @screen-md {
+    margin-left: -190px;
+
+    &--closed {
+      margin-left: 0;
+    }
+
+    &__btn {
+      float: none;
+    }
+    &__btn {
+      width: 160px;
+    }
+    &__btn--opened {
+      &:after {
+        left: 35px;
+      }
+    }
+ 
+  }
+
+  @media @screen-lg {
+    &__btn {
+      float: right;
+      width: 87px;
+    } 
+
+    &__btn--opened {
+      &:after {
+        left: 0;
+      }
+    }
+  }
+
+
 }

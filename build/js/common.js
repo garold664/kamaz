@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   setDropdownToggle("nav-button--menu");
   setDropdownToggle("page-header__menu-btn");
-  setDropdownToggle("page-header__nav-btn");
+  setDropdownToggle("nav__btn");
   setDropdownToggle("page-header__search-btn");
   setDropdownToggle("page-footer__nav-link");
   setDropdownToggle("page-header__flags-btn");
