@@ -28,7 +28,7 @@ gulp.task("style", function() {
     .pipe(less())
     .pipe(postcss([
       autoprefixer({browsers: [
-        "last 1 version",
+        "last 4 version",
         "last 2 Chrome versions",
         "last 2 Firefox versions",
         "last 2 Opera versions",

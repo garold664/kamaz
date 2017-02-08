@@ -12,7 +12,6 @@
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/picturefill.min.js"></script>
-  <script src="js/selectivizr-min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,14 +19,24 @@
   <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
   <style>
-    .footer-img {
-      bottom: -95px;
-    }
-    .lightbox {
-      background-image: url(../images/alpha-pixel.png);
-    }
     .overlay:hover .overlay__block {
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+    .page-header__menu-link {
+      width: 80px;
+    }
+    .page-header__menu-btn {
+      width: 110px;
+    }
+    .page-header__nav-item {
+      max-width: 150px;
+      font-size: 12px;
+    }
+    .page-header__nav-link--active {
+      min-width: 130px;
+    }
+    .page-header__nav-link {
+      font-size: 13px;
     }
   </style>
   <![endif]-->
@@ -35,7 +44,7 @@
 <body>
   <header class="page-header">
     <div class="page-header__headline">
-      <div class="page-header__container">
+      <div class="page-header__container page-header__container--menu">
         <div class="page-header__wrapper clearfix">
           <a class="logo overlay" href="#">
             <picture>
@@ -119,22 +128,22 @@
               Медиа
             </a>
           </li>
-          <li class="page-header__menu-item">
+          <li class="page-header__menu-item hidden-xs">
             <a class="page-header__menu-link" href="#">
               Команда
             </a>
           </li>
-          <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="#">
+          <li class="page-header__menu-item hidden-xs">
+            <a class="page-header__menu-link page-header__menu-link--active" href="#">
               Клуб
             </a>
           </li>
-          <li class="page-header__menu-item">
+          <li class="page-header__menu-item hidden-xs hidden-sm">
             <a class="page-header__menu-link" href="#">
               Фан-зона
             </a>
           </li>
-          <li class="page-header__menu-item">
+          <li class="page-header__menu-item hidden-xs hidden-sm">
             <a class="page-header__menu-link" href="#">
               Билеты
             </a>
@@ -144,27 +153,27 @@
           Ещё
         </button>
         <ul class="page-header__dropdown page-header__dropdown--closed">
-          <li class="page-header__dropdown-item">
+          <li class="page-header__dropdown-item hidden">
             <a class="page-header__dropdown-link" href="#">
               Новости
             </a>
           </li>
-          <li class="page-header__dropdown-item">
+          <li class="page-header__dropdown-item hidden">
             <a class="page-header__dropdown-link" href="#">
               Матчи
             </a>
           </li>
-          <li class="page-header__dropdown-item">
+          <li class="page-header__dropdown-item hidden">
             <a class="page-header__dropdown-link" href="#">
               Медиа
             </a>
           </li>
-          <li class="page-header__dropdown-item">
+          <li class="page-header__dropdown-item visible-xs-block">
             <a class="page-header__dropdown-link" href="#">
               Команда
             </a>
           </li>
-          <li class="page-header__dropdown-item">
+          <li class="page-header__dropdown-item visible-xs-block">
             <a class="page-header__dropdown-link" href="#">
               Клуб
             </a>
@@ -212,22 +221,22 @@
               Вакансии
             </a>
           </li>
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item hidden-xs hidden-sm">
             <a class="page-header__nav-link" href="#">
               Инфракструктура
             </a>
           </li>
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item hidden-sm visible-lg-inline-block">
             <a class="page-header__nav-link" href="#">
               РЦПФ
             </a>
           </li>
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item hidden-sm visible-lg-inline-block">
             <a class="page-header__nav-link" href="#">
               Наши воспитанники
             </a>
           </li>
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item hidden">
             <a class="page-header__nav-link" href="#">
               Еще одна ссылка
             </a>
@@ -235,37 +244,37 @@
         </ul>
         <button class="page-header__nav-btn dropdown-btn" data-toggle="page-header__nav-mobile"><span>Ещё</span></button>
         <ul class="page-header__nav-mobile page-header__nav-mobile--closed">
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item visible-xs">
             <a class="page-header__nav-link page-header__nav-link--active">
               Администрация
             </a>
           </li>
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item visible-xs">
             <a class="page-header__nav-link" href="#">
               Контакты
             </a>
           </li>
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item visible-xs">
             <a class="page-header__nav-link" href="#">
               История
             </a>
           </li>
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item visible-xs">
             <a class="page-header__nav-link" href="#">
               Вакансии
             </a>
           </li>
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item hidden-md hidden-lg">
             <a class="page-header__nav-link" href="#">
               Инфракструктура
             </a>
           </li>
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item hidden-lg">
             <a class="page-header__nav-link" href="#">
               РЦПФ
             </a>
           </li>
-          <li class="page-header__nav-item">
+          <li class="page-header__nav-item hidden-lg">
             <a class="page-header__nav-link" href="#">
               Наши воспитанники
             </a>
@@ -460,7 +469,7 @@
             </li>
           </ul>
         </li>
-        <li class="page-footer__nav-item">
+        <li class="page-footer__nav-item page-footer__nav-item--last">
           <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Фан-зона</a>
           <ul class="page-footer__subnav page-footer__subnav--closed">
             <li class="page-footer__subnav-item">

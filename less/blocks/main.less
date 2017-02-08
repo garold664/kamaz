@@ -146,7 +146,29 @@
 .main {
   &__select {
     width: 100%;
+    border: 1px solid #e8e8e8;
+    padding: 8px 9px;
+    font-family: @cuprum;
+    font-size: 14px;
+    line-height: 18px;
     margin-bottom: 32px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    -khtml-appearance: none;
+    appearance: none;
+    background-image: url("../img/select-arrow.jpg");
+    background-position: 98%;
+    background-repeat: no-repeat;
+    color: #8b8d91;
+    &:focus {
+      outline: none;
+      border-color: #000;
+    }
+    & option {
+      padding: 10px;
+    }
   }
 
   @media @screen-sm {

@@ -6,7 +6,6 @@ $(document).ready(function() {
 
     closeBtn.on("click", function(event) {
       event.preventDefault();
-      console.log(event.target);
       var dropdownEl = ($(this).parent().hasClass(dropdownClassname)) ?
                        ($(this).parent()) :
                        ($(this).parent().find(dropdown));
@@ -30,8 +29,6 @@ $(document).ready(function() {
     historyList.animate({
       left: "-=150"
     });
-    console.log(historyList.css.left);
-    console.log(historyItem.css.width);
   });
 
 });

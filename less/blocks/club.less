@@ -5,6 +5,7 @@
   }
   &__item {
     .clearfix;
+    display: block;
     margin-bottom: 20px;
   }
   &__item-pic {
@@ -47,6 +48,11 @@
   @media @screen-md {
     &__item-info {
       padding-left: 200px;
+    }
+  }
+  @media @screen-lg {
+    &__item-info {
+      height: 170px;
     }
   }
 }
