@@ -1,0 +1,143 @@
+.matches {
+  background-color: #131d41;
+  background-image: url("../img/bg-matches-320.jpg");
+  background-repeat: repeat-x;
+  color: #fff;
+  font-family: @ptsans;
+
+  & .carousel__arrow {
+    width: 8px;
+    height: 13px;
+    top: 50%;
+    background-repeat: no-repeat;
+    &--left {
+      background-image: url("../img/arrow-white-left-icon.png");
+    }
+    &--right {
+      background-image: url("../img/arrow-white-right-icon.png");
+    }
+  }
+  &__slide {
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+  &__title {
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  &__name {
+    display: block;
+  }
+  &__score {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  &__team {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__numbers {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px;
+  }
+  &__team-name {
+    .reset;
+    padding-top: 5px;
+    font-family: @ptsans;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__numbers {
+    font-size: 16px;
+    font-family: @ptsans;
+    font-weight: bold;
+    width: 67px;
+    height: 33px;
+    background-image: url("../img/bg-score.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  &__dropdown-wrapper {
+    position: relative;
+  }
+  &__dropdown-btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; 
+    width: 100%;
+    padding: 5px 15px;
+    font-family: @cuprum;
+    font-size: 14px;
+    line-height: 18px;
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 18px;
+      top: 12px;
+      background-image: url("../img/arrow-white-down-icon.png");
+      width: 10px;
+      height: 7px;
+    }
+
+    &:hover, &:active, &--opened {
+      background-color: #fff;
+      color: #141d41;
+      text-decoration: none;
+      &:after {
+        background-image: url("../img/arrow-blue-down-icon.png");
+      }
+    }
+  }
+
+  &__dropdown {
+    .item;
+    .reset;
+    background-color: #fff;
+    &--closed {
+      display: none;
+    }
+    @media @screen-sm {
+      position: absolute;
+      z-index: 100;
+    }
+  }
+  &__dropdown:hover &__dropdown-link:after{
+    content: none;
+  }
+  &__dropdown-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: 5px 15px;
+
+    font-family: @cuprum;
+    font-size: 14px;
+    line-height: 18px;
+    color: #141d41;
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      top: 0;
+      border-top: 1px solid #aaa;
+    }
+    &:hover, &:active {
+      text-decoration: none;
+      background-color: #d1d1d1;
+      color: #141d41;
+    }
+  }
+
+}

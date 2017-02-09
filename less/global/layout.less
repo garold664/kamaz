@@ -42,3 +42,42 @@ body {
   }
 }
 
+.banner-page-header {
+  display: none;
+  text-align: center;
+  background-color: #fff;
+  @media @screen-sm {
+    display: block;
+    padding: 20px 0;
+    &__inner {
+      display: inline-block;
+      height: 44px;
+      background-color: #fff;
+      background-image: url("../img/banner-1-768.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 708px;      
+    }
+    
+  }
+  @media @screen-md {
+    padding: 23px 0;
+    &__inner {
+      height: 54px;
+      background-image: url("../img/banner-1-960.jpg");
+      width: 930px;
+    }
+
+  }
+  @media @screen-lg {
+    padding: 20px 0;
+    &__inner {
+      background-image: url("../img/banner-1-1170.jpg");
+      width: 980px;
+      height: 60px;
+    }
+
+  }
+  
+}
+

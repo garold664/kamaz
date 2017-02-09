@@ -833,6 +833,11 @@ body {
 .carousel__arrow--right:after {
   background-image: url("../img/arrow-right-icon.png");
 }
+.banner-page-header {
+  display: none;
+  text-align: center;
+  background-color: #fff;
+}
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -1733,6 +1738,7 @@ body {
   line-height: 1.2;
   font-weight: bold;
 }
+/*end club.html*/
 .slider {
   background-color: #fff;
 }
@@ -1788,6 +1794,146 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 0;
+}
+.matches {
+  background-color: #131d41;
+  background-image: url("../img/bg-matches-320.jpg");
+  background-repeat: repeat-x;
+  color: #fff;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+.matches .carousel__arrow {
+  width: 8px;
+  height: 13px;
+  top: 50%;
+  background-repeat: no-repeat;
+}
+.matches .carousel__arrow--left {
+  background-image: url("../img/arrow-white-left-icon.png");
+}
+.matches .carousel__arrow--right {
+  background-image: url("../img/arrow-white-right-icon.png");
+}
+.matches__slide {
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+.matches__title {
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+}
+.matches__name {
+  display: block;
+}
+.matches__score {
+  padding-bottom: 15px;
+  text-align: center;
+}
+.matches__team {
+  display: inline-block;
+  vertical-align: middle;
+}
+.matches__numbers {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 12px;
+}
+.matches__team-name {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.matches__numbers {
+  font-size: 16px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  width: 67px;
+  height: 33px;
+  background-image: url("../img/bg-score.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.matches__dropdown-wrapper {
+  position: relative;
+}
+.matches__dropdown-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  padding: 5px 15px;
+  font-family: "Cuprum", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.matches__dropdown-btn:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  background-image: url("../img/arrow-white-down-icon.png");
+  width: 10px;
+  height: 7px;
+}
+.matches__dropdown-btn:hover,
+.matches__dropdown-btn:active,
+.matches__dropdown-btn--opened {
+  background-color: #fff;
+  color: #141d41;
+  text-decoration: none;
+}
+.matches__dropdown-btn:hover:after,
+.matches__dropdown-btn:active:after,
+.matches__dropdown-btn--opened:after {
+  background-image: url("../img/arrow-blue-down-icon.png");
+}
+.matches__dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.matches__dropdown--closed {
+  display: none;
+}
+.matches__dropdown:hover .matches__dropdown-link:after {
+  content: none;
+}
+.matches__dropdown-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  padding: 5px 15px;
+  font-family: "Cuprum", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #141d41;
+}
+.matches__dropdown-link:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 0;
+  border-top: 1px solid #aaa;
+}
+.matches__dropdown-link:hover,
+.matches__dropdown-link:active {
+  text-decoration: none;
+  background-color: #d1d1d1;
+  color: #141d41;
 }
 /*end main-page.html*/
 /*нужно добавить блок для link, btn */
@@ -1961,6 +2107,19 @@ body {
   }
   .col-sm-offset-0 {
     margin-left: 0%;
+  }
+  .banner-page-header {
+    display: block;
+    padding: 20px 0;
+  }
+  .banner-page-header__inner {
+    display: inline-block;
+    height: 44px;
+    background-color: #fff;
+    background-image: url("../img/banner-1-768.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 708px;
   }
   .page-header__container {
     width: 750px;
@@ -2329,6 +2488,10 @@ body {
   .slider .carousel-indicators li.active {
     background-color: #000;
   }
+  .matches__dropdown {
+    position: absolute;
+    z-index: 100;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm {
@@ -2554,6 +2717,14 @@ body {
   }
   .col-md-offset-0 {
     margin-left: 0%;
+  }
+  .banner-page-header {
+    padding: 23px 0;
+  }
+  .banner-page-header__inner {
+    height: 54px;
+    background-image: url("../img/banner-1-960.jpg");
+    width: 930px;
   }
   .page-header__container {
     width: 970px;
@@ -2905,6 +3076,14 @@ body {
   .hidden-lg {
     display: none !important;
   }
+  .banner-page-header {
+    padding: 20px 0;
+  }
+  .banner-page-header__inner {
+    background-image: url("../img/banner-1-1170.jpg");
+    width: 980px;
+    height: 60px;
+  }
   .page-header__container {
     width: 1170px;
   }
@@ -2959,8 +3138,14 @@ body {
   .club__item-info {
     height: 170px;
   }
+  .slider {
+    background-color: #545864;
+  }
   .slider__item {
     background-image: url("../img/bg-slider-1170.png");
+  }
+  .slider__content {
+    width: 400px;
   }
 }
 @media (max-width: 767px) {

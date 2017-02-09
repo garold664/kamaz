@@ -3,6 +3,7 @@ $(document).ready(function() {
     var closeBtn = $("." + toggleBtn);
     var dropdownClassname = closeBtn.data("toggle");
     var dropdown = $("." + dropdownClassname);
+    console.log(dropdown);
 
     closeBtn.on("click", function(event) {
       event.preventDefault();
@@ -20,6 +21,7 @@ $(document).ready(function() {
   setDropdownToggle("page-header__search-btn");
   setDropdownToggle("page-footer__nav-link");
   setDropdownToggle("page-header__flags-btn");
+  setDropdownToggle("matches__dropdown-btn");
 
   var nextBtn = $(".main__history-nav-btn--next");
   var prevBtn = $(".main__history-nav-btn--prev");
@@ -31,12 +33,11 @@ $(document).ready(function() {
       marginLeft: "-=150"
     }, function(){
       var ml = historyList.css("margin-left");
-      console.log(ml);
       if (ml == "-150px") {
-        prevBtn.css("display", "inline-block")
+        prevBtn.css("display", "inline-block");
       }
       if (ml == "-450px") {
-        nextBtn.css("display", "none")
+        nextBtn.css("display", "none");
       }
     });
     
@@ -44,9 +45,8 @@ $(document).ready(function() {
   prevBtn.on("click", function(event) {
     historyList.animate({
       marginLeft: "+=150"
-    }, function(){
+    }, function() {
       var ml = historyList.css("margin-left");
-      console.log(historyList.css("marginLeft"));
       if (ml == "0px") {
         prevBtn.css("display", "none");
       }
@@ -54,8 +54,7 @@ $(document).ready(function() {
         nextBtn.css("display", "inline-block");
       }
 
-      console.log(historyList.css("marginLeft"));
     });
-  });
 
+  });
 });
