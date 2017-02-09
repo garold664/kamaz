@@ -3,7 +3,6 @@ $(document).ready(function() {
     var closeBtn = $("." + toggleBtn);
     var dropdownClassname = closeBtn.data("toggle");
     var dropdown = $("." + dropdownClassname);
-    console.log(dropdown);
 
     closeBtn.on("click", function(event) {
       event.preventDefault();

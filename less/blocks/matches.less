@@ -253,4 +253,96 @@
     }
   }
 
+
+  /* .matches in .tables */
+
+  &--table {
+    padding-top: 24px;
+    background: none;
+    color: #000;
+    .matches__slide {
+      background-image: url("../img/bg-skew.png");
+      background-repeat: no-repeat;
+      background-position: center 0;
+    }
+    .matches__numbers {
+      background: none;
+    }
+    .matches__slide {
+      padding-top: 25px;
+      padding-bottom: 8px;
+    }
+    .matches__team-name {
+      padding-top: 20px;
+    }
+    .matches__numbers {
+      height: auto;
+      vertical-align: top;
+      margin: 0;
+    }
+    .matches__numbers-inner {
+      font-size: 24px;
+    }
+    .matches__numbers-sub {
+      color: #a1a1a1;
+    }
+  }
+
+  &__wrapper {
+    border: 1px solid #e3e3e4;
+  }
+  &__header {
+    .clearfix;
+    padding: 10px 25px;
+    border-bottom: 1px solid #e3e3e4;
+  }
+  &__header-link {
+    float: left;
+    font-family: @ptsans;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #8b8d91;
+    &:hover {
+      color: #121b3c;
+      text-decoration: none;
+    }
+    &:active, &--active {
+      font-size: 14px;
+      color: #121b3c;
+    }
+    &--next {
+      float: right;
+    }
+  }
+  &__footer {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px 20px;
+    border-top: 1px solid #e3d3e4;
+  }
+  &__links-btn {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #e3d3e4;
+    text-align: center;
+    font-family: @cuprum;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8b8d91;
+    &:hover {
+      border-color: #33478e;
+      text-decoration: none;
+      color: #33478e;
+    }
+    &:active {
+      border-color: #33478e;
+      background-color: #33478e;
+      color: #fff;
+    }
+  }
+
 }
