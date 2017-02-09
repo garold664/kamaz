@@ -5,7 +5,11 @@
   color: #fff;
   font-family: @ptsans;
 
-  & .carousel__arrow {
+  @media @screen-sm {
+    background-image: url("../img/bg-matches.jpg");
+  }
+
+  & .carousel-control .carousel__arrow {
     width: 8px;
     height: 13px;
     top: 50%;
@@ -16,16 +20,90 @@
     &--right {
       background-image: url("../img/arrow-white-right-icon.png");
     }
+    @media @screen-sm {
+      
+      &--left{
+        margin-left: -42px;
+      }
+      &--right {
+        margin-right: -42px;
+      }
+    }
+    @media @screen-lg {
+      &--left{
+        margin-left: -84px;
+      }
+      &--right {
+        margin-right: -84px;
+      }
+    }
   }
   &__slide {
     padding-top: 45px;
     padding-bottom: 30px;
+    @media @screen-sm {
+      position: relative;
+      &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: 30px;
+        top: 30px;
+        left: 182px;
+        border-left: 1px solid #ccc;
+      }
+
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: 30px;
+        top: 30px;
+        right: 182px;
+        border-left: 1px solid #ccc;
+      }
+
+    }
+    @media @screen-md {
+      &:before {
+        left: 246px;
+      }
+      &:after {
+        right: 246px;
+      }
+    }
+    @media @screen-lg {
+      &:before {
+        left: 385px;
+      }
+      &:after {
+        right: 385px;
+      }
+    }
   }
   &__title {
     padding-bottom: 15px;
     text-align: center;
     font-size: 14px;
     line-height: 22px;
+    @media @screen-sm {
+      text-align: right;
+      padding-top: 10px;
+      text-align: right;
+    }
+    @media @screen-md {
+      padding-right: 90px;
+    }
+    @media @screen-lg {
+      padding-right: 20px;
+    }
+  }
+  &__title-inner {
+    @media @screen-sm {
+      display: inline-block;
+      vertical-align: middle;
+      width: 155px;
+    }
   }
   &__name {
     display: block;
@@ -38,11 +116,6 @@
     display: inline-block;
     vertical-align: middle;
   }
-  &__numbers {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 12px;
-  }
   &__team-name {
     .reset;
     padding-top: 5px;
@@ -53,6 +126,9 @@
     text-transform: uppercase;
   }
   &__numbers {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px;
     font-size: 16px;
     font-family: @ptsans;
     font-weight: bold;
@@ -61,9 +137,32 @@
     background-image: url("../img/bg-score.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    @media @screen-sm {
+      width: 103px;
+      height: 50px;
+      padding-top: 5px;
+      font-size: 24px;
+    }
+    @media @screen-lg {
+      margin: 0 6px;
+    }
+  }
+  &__more {
+    @media @screen-sm {
+      position: relative;
+    }
+    @media @screen-md {
+      padding-left: 94px;
+    }
+    @media @screen-lg {
+      padding-left: 20px;
+    }
   }
   &__dropdown-wrapper {
     position: relative;
+    @media @screen-sm {
+      padding-top: 30px;
+    }
   }
   &__dropdown-btn {
     position: relative;
@@ -96,7 +195,20 @@
         background-image: url("../img/arrow-blue-down-icon.png");
       }
     }
+
+
+    @media @screen-sm {
+      width: 80px;
+      padding: 5px 10px;
+      &:after {
+        right: 9px;
+      }
+      &--opened {
+        width: 155px;
+      }
+    }
   }
+
 
   &__dropdown {
     .item;
@@ -106,8 +218,9 @@
       display: none;
     }
     @media @screen-sm {
-      position: absolute;
-      z-index: 100;
+      /* position: absolute;
+      z-index: 100; */
+      width: 155px;
     }
   }
   &__dropdown:hover &__dropdown-link:after{
