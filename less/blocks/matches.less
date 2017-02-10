@@ -263,7 +263,7 @@
     .matches__slide {
       background-image: url("../img/bg-skew.png");
       background-repeat: no-repeat;
-      background-position: center 0;
+      background-position: 115% 0;
     }
     .matches__numbers {
       background: none;
@@ -344,5 +344,88 @@
       color: #fff;
     }
   }
+
+    /* .matches in matches-otchet.html */
+
+  &--matches-page {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: @ptsans;
+    text-transform: none;
+    background: none;
+    @media @screen-sm {
+      background: none;
+    }
+    @media @screen-md {
+      background: none;
+    }
+    @media @screen-lg {
+      background: none;
+    }
+  }
+
+  &__goals-title {
+    font-family: @cuprum;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    color: #fff;
+    @media @screen-md {
+      padding-top: 28px;
+    }
+  }
+  &__goals-player {
+
+  }
+  &__goals-right {
+    text-align: right;
+
+    @media @screen-lg {
+    }
+  }
+  &__match {
+    text-align: center;
+  }
+  &__match-title {
+    .reset;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    @media @screen-sm {
+      padding-bottom: 8px;
+    }
+    @media @screen-md {
+      padding-bottom: 16px;
+    }
+  }
+
+  &--matches-page &__team-name {
+    display: inline-block;
+    font-size: 18px;
+    @media @screen-md {
+      margin: 0 20px;
+      font-size: 24px;
+    }
+  }
+  &--matches-page &__team-pic {
+    display: inline-block;
+  }
+
+  &--matches-page &__numbers {
+    height: auto;
+    margin: 0;
+    font-size: 18px;
+    background: none;
+    @media @screen-sm {
+      margin: 0 18px;
+    }
+    @media @screen-md {
+      margin: 0;
+      font-size: 30px;
+    }
+    @media @screen-lg {
+      width: 74px;
+    }
+  }
+
+
 
 }

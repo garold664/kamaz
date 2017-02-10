@@ -164,6 +164,9 @@
       color: #000;
       opacity: 1;
       filter: alpha(opacity=100);
+      &:hover {
+        color: #000;
+      }
     }  
 
 
@@ -249,5 +252,18 @@
     }
   }
 
+  /* matches-otchet */
+
+  @media @screen-sm {
+    .matches-otchet &__btn {
+      display: none;
+    }
+    .matches-otchet & .page-header__container {
+      background-color: transparent;
+    }
+    .matches-otchet &__list {
+      width: 768px;
+    }
+  }
 
 }
