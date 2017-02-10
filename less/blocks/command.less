@@ -1,0 +1,112 @@
+.command {
+   
+  @media @screen-sm {
+    & .nav__btn {
+      display: none;
+    }   
+    & .nav .page-header__container {
+      background-color: transparent;
+    } 
+    & .nav__list {
+      width: 630px;
+      background-color: #17224c;
+    }
+  }
+
+  & .main {
+    @media @screen-sm {
+      position: relative;
+      padding-top: 24px;
+    }
+  }
+
+  & .main__select {
+    margin-bottom: 20px;
+    @media @screen-sm {
+      position: absolute;
+      right: 20px;
+      width: 80px;
+      background-position: 86%;
+    }
+  }
+
+  & .page-aside {
+    padding-top: 72px;
+    padding-left: 15px;
+  }
+
+  & .page-aside__title {
+    margin-bottom: 26px;
+  }
+  &__title {
+    @media @screen-sm {
+      padding-bottom: 26px;
+    }
+    
+  }
+  
+  &__wrapper {
+    padding-bottom: 26px;
+    @media @screen-sm {
+      padding-bottom: 50px;
+    }
+    @media @screen-md {
+      padding-bottom: 35px;
+    }
+  }
+  &__item {
+    .clearfix;
+    padding-bottom: 10px;
+    font-family: @ptsans;
+    @media @screen-sm {
+      padding-bottom: 40px;
+    }
+  }
+  &__item-pic {
+    float: left;
+  }
+  &__item-info {
+    margin-left: 88px;
+    padding-top: 6px;
+    padding-right: 25px;
+    @media @screen-sm {
+      padding-top: 20px;
+      margin-left: 128px;
+      padding-right: 0;
+    }
+    @media @screen-md {
+      padding-top: 20px;
+      margin-left: 120px;
+      padding-right: 0;
+    }
+  }
+  &__item-name {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #121b3c;
+    @media @screen-sm {
+      padding-bottom: 25px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  &__item-date {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__item-nation {
+    font-size: 14px;
+    line-height: 18px;
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: bottom;
+      background-image: url("../img/flag-russia-icon.png");
+      width: 24px;
+      height: 16px;
+      border: 1px solid #e3e3e4;
+    }
+  }
+}

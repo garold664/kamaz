@@ -867,6 +867,29 @@ a:hover {
 .tables {
   margin-top: 10px;
 }
+.link-btn {
+  display: inline-block;
+  height: 30px;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #e3d3e4;
+  text-align: center;
+  font-family: "Cuprum", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: bold;
+  color: #8b8d91;
+}
+.link-btn:hover {
+  border-color: #33478e;
+  text-decoration: none;
+  color: #33478e;
+}
+.link-btn:active {
+  border-color: #33478e;
+  background-color: #33478e;
+  color: #fff;
+}
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -1688,7 +1711,7 @@ a:hover {
   padding-top: 56px;
   padding-left: 20px;
 }
-.birthday__title {
+.page-aside__title {
   margin: 0;
   padding: 0;
   position: relative;
@@ -1699,7 +1722,7 @@ a:hover {
   margin-bottom: 35px;
   color: #33478e;
 }
-.birthday__title:after {
+.page-aside__title:after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -2069,28 +2092,6 @@ a:hover {
   padding: 15px 20px;
   border-top: 1px solid #e3d3e4;
 }
-.matches__links-btn {
-  display: inline-block;
-  height: 30px;
-  width: 100%;
-  margin-top: 10px;
-  border: 1px solid #e3d3e4;
-  text-align: center;
-  font-family: "Cuprum", "Arial Narrow", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  color: #8b8d91;
-}
-.matches__links-btn:hover {
-  border-color: #33478e;
-  text-decoration: none;
-  color: #33478e;
-}
-.matches__links-btn:active {
-  border-color: #33478e;
-  background-color: #33478e;
-  color: #fff;
-}
 .matches--matches-page {
   font-size: 14px;
   font-weight: normal;
@@ -2200,6 +2201,94 @@ a:hover {
   background-image: url("../img/google-plus-black-icon.png");
 }
 /*end main-page.html*/
+.command .main__select {
+  margin-bottom: 20px;
+}
+.command .page-aside {
+  padding-top: 72px;
+  padding-left: 15px;
+}
+.command .page-aside__title {
+  margin-bottom: 26px;
+}
+.command__wrapper {
+  padding-bottom: 26px;
+}
+.command__item {
+  padding-bottom: 10px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+.command__item::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.command__item-pic {
+  float: left;
+}
+.command__item-info {
+  margin-left: 88px;
+  padding-top: 6px;
+  padding-right: 25px;
+}
+.command__item-name {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #121b3c;
+}
+.command__item-date {
+  font-size: 14px;
+  line-height: 18px;
+}
+.command__item-nation {
+  font-size: 14px;
+  line-height: 18px;
+}
+.command__item-nation:before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url("../img/flag-russia-icon.png");
+  width: 24px;
+  height: 16px;
+  border: 1px solid #e3e3e4;
+}
+.poll {
+  padding-bottom: 40px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+.poll__table-wrapper {
+  padding: 15px;
+  border: 1px solid #e9e9ea;
+}
+.poll table {
+  width: 100%;
+}
+.poll__title {
+  padding: 10px;
+  border: 1px solid #e9e9ea;
+  text-align: center;
+  font-weight: bold;
+  color: #121b3c;
+}
+.poll__pic {
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+.poll__name {
+  width: 90px;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: top;
+}
+.poll__percent {
+  text-align: right;
+}
+/*end command.html*/
 /*нужно добавить блок для link, btn */
 @media (min-width: 768px) {
   .container {
@@ -2842,6 +2931,16 @@ a:hover {
   .matches--matches-page .matches__numbers {
     margin: 0 18px;
   }
+  .matches-page .nav__btn {
+    display: none;
+  }
+  .matches-page .nav .page-header__container {
+    background-color: transparent;
+  }
+  .matches-page .nav__list {
+    width: 768px;
+    background-color: #17224c;
+  }
   .matches-page__title {
     padding-top: 15px;
     font-size: 24px;
@@ -2856,6 +2955,45 @@ a:hover {
   .matches-page__socials b {
     font-size: 16px;
     padding-top: 38px;
+  }
+  .command .nav__btn {
+    display: none;
+  }
+  .command .nav .page-header__container {
+    background-color: transparent;
+  }
+  .command .nav__list {
+    width: 630px;
+    background-color: #17224c;
+  }
+  .command .main {
+    position: relative;
+    padding-top: 24px;
+  }
+  .command .main__select {
+    position: absolute;
+    right: 20px;
+    width: 80px;
+    background-position: 86%;
+  }
+  .command__title {
+    padding-bottom: 26px;
+  }
+  .command__wrapper {
+    padding-bottom: 50px;
+  }
+  .command__item {
+    padding-bottom: 40px;
+  }
+  .command__item-info {
+    padding-top: 20px;
+    margin-left: 128px;
+    padding-right: 0;
+  }
+  .command__item-name {
+    padding-bottom: 25px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3255,6 +3393,14 @@ a:hover {
   .matches-page__socials b {
     padding-top: 25px;
   }
+  .command__wrapper {
+    padding-bottom: 35px;
+  }
+  .command__item-info {
+    padding-top: 20px;
+    margin-left: 120px;
+    padding-right: 0;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .visible-md {
@@ -3576,6 +3722,9 @@ a:hover {
   }
   .matches--matches-page .matches__numbers {
     width: 74px;
+  }
+  .poll__pic {
+    width: 44px;
   }
 }
 @media (max-width: 767px) {
